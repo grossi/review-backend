@@ -1,0 +1,51 @@
+{
+  "name": "review-backend",
+  "version": "1.0.0",
+  "description": "Backend for a simple review site",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grossi/review-backend.git"
+  },
+  "author": "Gabriel Rossi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grossi/review-backend/issues"
+  },
+  "homepage": "https://github.com/grossi/review-backend#readme",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "test": "./node_modules/mocha/bin/mocha --require @babel/register --require @babel/polyfill"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "apollo-server": "^2.9.5",
+    "apollo-server-express": "^2.9.5",
+    "apollo-server-testing": "^2.9.5",
+    "aws-sdk": "^2.546.0",
+    "axios": "^0.19.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-unless": "^0.5.0",
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.4",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "nodemon": "^1.19.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "chai": "^4.2.0",
+    "chai-graphql": "^4.0.0",
+    "mocha": "^6.2.1"
+  }
+}
